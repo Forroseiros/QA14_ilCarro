@@ -1,7 +1,6 @@
-package com.ilCarro.qa14;
+package com.ilCarro.qa14.tests;
 
-import org.openqa.selenium.By;
-import org.testng.Assert;
+import com.ilCarro.qa14.models.User;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -9,8 +8,8 @@ public class CreateAccountTest extends TestBase {
     // preconditions: user should be logget out
     @BeforeMethod
     public void ensurePrecondition(){
-        if (!isSignUpFormPresent()) {
-            logout();
+        if (!app.user().isSignUpButtonPresent()) {
+            app.user().logout();
             //sign up is not present
             //click on logout button
         }
@@ -18,15 +17,13 @@ public class CreateAccountTest extends TestBase {
 
     @Test
     public void signUpTest(){
-        click(By.cssSelector("[href='/signup']"));
-        isLoginFormPresent();
-        type(By.cssSelector("#first_name"), "Boberka");
-        type(By.cssSelector("#second_name"), "Boberichka");
-        type(By.cssSelector("#email"), "Boberichka4@bober.com");
-        type(By.cssSelector("#password"), "123456789Rfnz");
-        click(By.cssSelector("#check_policy"));
-        submit();
-        Assert.assertTrue(isElementPresent(By.cssSelector("#root > div > header > section > ul > li:nth-child(5) > a")));
+        app.header().clickOnSignupTab();
+        app.user().isSignUpFormPresent();
+        app.user().fillRegistrationForm(new User().withFirstName("Boberka").withSecondName("Boberichka").
+                withEmail("Boberichka@bober.com").withPassword("123456789Rfnz"));
+        app.user().clickCheckPolicy();
+        app.user().submit();
+        app.user().isLogInFormPresent();
 
 
         // check локатор через chropath

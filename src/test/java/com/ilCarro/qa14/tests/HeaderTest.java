@@ -1,9 +1,8 @@
-package com.ilCarro.qa14;
+package com.ilCarro.qa14.tests;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -11,7 +10,7 @@ import org.testng.annotations.Test;
 import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
-public class HeaderTest {
+public class HeaderTest extends TestBase {
     WebDriver wd;
 
     @BeforeMethod
@@ -37,26 +36,27 @@ public class HeaderTest {
 
     @Test
     public void SearchTest() {
-        wd.findElement(By.cssSelector("div.container-full header.container-full:nth-child(1) section.container.header ul.header__nav.desktop:nth-child(2) li:nth-child(1) > a:nth-child(1)")).click();
-        Assert.assertTrue(isElementPresent(By.cssSelector("#root > div > section > div.main-search__sidebar > div.search-sidebar__content")));
+        app.header().findSearchButton();
+        app.header().isSearchTitlePresent();
 
     }
 
     @Test
     public void LetTheCatWorkTest() {
-        wd.findElement(By.cssSelector("#root > div > header > section > ul > li:nth-child(2) > a")).click();
-        Assert.assertTrue(isElementPresent(By.cssSelector("#root > div > section > div.let-carwork-style_let_car__options__1vKeV")));
+        app.header().findLetTheCatButton();
+        app.car().isLetTheCatTitlePresent();
     }
 
     @Test
     public void TermsOfUseTest() {
-        wd.findElement(By.cssSelector("#root > div > header > section > ul > li:nth-child(3) > a")).click();
-        Assert.assertTrue(isElementPresent(By.cssSelector("#root > div")));
+        app.header().findTermsOfUseButton();
+        app.header().isTermsOfUseTitlePresent();
     }
+
     @Test
     public void LogInTest(){
-        wd.findElement(By.cssSelector("#root > div > header > section > ul > li:nth-child(5) > a")).click();
-        Assert.assertTrue(isElementPresent(By.cssSelector("#root > div > div:nth-child(2) > div > div.Login_login__right_block__1niYm")));
+        app.header().findLoginButton();
+        app.user().isLoginTitlePresent();
     }
 
     @AfterMethod(enabled = false)
