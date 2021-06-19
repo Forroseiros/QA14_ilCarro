@@ -17,9 +17,19 @@ public class CreateCarTest extends TestBase {
     public void addCarTest() throws InterruptedException{
         app.user().pause();
         app.car().clickOnAddCarTab();
-        app.car().fillCarForm(new Car().setCountry("Germany").setAddress("Friedrichstrasse").setDistance("1000"));
+        app.car().fillCarForm(new Car()
+                .setCountry("Germany")
+                .setAddress("Friedrichstrasse")
+                .setDistance("1000"));
 
 
+    }
+    @Test(dataProvider = "validCarFromCSV",dataProviderClass = DataProviders.class)
+    public void addCarFromCSVTest(Car car) throws InterruptedException {
+        app.user().pause();
+        app.car().clickOnAddCarTab();
+
+        app.car().fillCarForm(car);
     }
 
 }

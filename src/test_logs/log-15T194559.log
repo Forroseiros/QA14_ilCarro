@@ -1,0 +1,9 @@
+19:46:05.769 [main] INFO  com.ilCarro.qa14.tests.TestBase - Start test signUpFromDataProviderTestwith data:[fName, sName, fBoberkov@gmail.com, 123456789Rfnz]
+19:46:05.774 [main] INFO  com.ilCarro.qa14.tests.TestBase - ______________________________
+19:46:07.760 [main] INFO  com.ilCarro.qa14.tests.TestBase - Stop test signUpFromDataProviderTest
+19:46:07.762 [main] INFO  com.ilCarro.qa14.tests.TestBase - Start test signUpFromDataProviderTestwith data:[fName, sName, fBoberkovna@gmail.com, 123456789Rfnz]
+19:46:07.762 [main] INFO  com.ilCarro.qa14.tests.TestBase - ______________________________
+19:46:09.103 [main] INFO  com.ilCarro.qa14.tests.TestBase - Stop test signUpFromDataProviderTest
+19:46:09.105 [main] INFO  com.ilCarro.qa14.tests.TestBase - Start test signUpFromDataProviderTestwith data:[fName, sName, fBoberkichi@gmail.com, 123456789Rfnz]
+19:46:09.106 [main] INFO  com.ilCarro.qa14.tests.TestBase - ______________________________
+19:46:10.410 [main] INFO  com.ilCarro.qa14.tests.TestBase - Stop test signUpFromDataProviderTest

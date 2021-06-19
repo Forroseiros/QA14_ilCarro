@@ -15,6 +15,10 @@ public class UserHelper extends HelperBase {
         Assert.assertTrue(isElementPresent(By.cssSelector("#root > div > div:nth-child(2) > div > div.Login_login__right_block__1niYm")));
     }
 
+    public boolean isLoginFormPresent(){
+        return isElementPresent(By.cssSelector("#root > div > header > section > ul > li:nth-child(5) > a"));
+    }
+
     public void logout() {
         click(By.xpath("//a[contains(.,'logOut')]"));
     }
@@ -44,7 +48,7 @@ public class UserHelper extends HelperBase {
     }
 
     public boolean isUserLoggedIn() {
-        return isFindCarFormPresent(By.xpath("//a[contains(.,'logOut')]"));
+        return isElementPresent(By.xpath("//a[contains(.,'logOut')]"));
     }
 
     public void isLogInFormPresent() {

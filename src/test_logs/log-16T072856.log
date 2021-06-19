@@ -1,0 +1,3 @@
+07:29:03.113 [main] INFO  com.ilCarro.qa14.tests.TestBase - Start test loginRegisteredUserPositiveTestwith data:[]
+07:29:03.124 [main] INFO  com.ilCarro.qa14.tests.TestBase - ______________________________
+07:29:24.526 [main] ERROR com.ilCarro.qa14.tests.TestBase - FAILED: Test method loginRegisteredUserPositiveTest

@@ -1,0 +1,4 @@
+19:20:42.574 [main] INFO  com.ilCarro.qa14.tests.TestBase - Start test loginRegisteredUserPositiveTestwith data:[]
+19:20:42.579 [main] INFO  com.ilCarro.qa14.tests.TestBase - ______________________________
+19:21:05.690 [main] ERROR com.ilCarro.qa14.tests.TestBase - FAILED: Test method loginRegisteredUserPositiveTest
+Svreenshot:C:\Projects\QA14_ilCarro\screenshot1623860465659png

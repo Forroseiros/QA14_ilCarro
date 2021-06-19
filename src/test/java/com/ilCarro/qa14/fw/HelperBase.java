@@ -1,10 +1,10 @@
 package com.ilCarro.qa14.fw;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
+import com.google.common.io.Files;
+import org.openqa.selenium.*;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.NoSuchElementException;
 
 public class HelperBase {
@@ -15,15 +15,15 @@ public class HelperBase {
         this.wd = wd;
     }
 
-    public boolean isFindCarFormPresent(By by){
-        return wd.findElements(by).size()>0;
+    public boolean isElementPresent(By by) {
+        return wd.findElements(by).size() > 0;
     }
 
-    public boolean isElementPresent(By locator){
-        try{
+    public boolean isElementPresent1(By locator) {
+        try {
             wd.findElement(locator);
             return true;
-        }catch (NoSuchElementException ex){
+        } catch (NoSuchElementException ex) {
             return false;
         }
     }
@@ -33,16 +33,31 @@ public class HelperBase {
             click(locator);
             wd.findElement(locator).clear();
             wd.findElement(locator).sendKeys(text);
+           // wd.findElement(locator).sendKeys(Keys
+              //      .chord(Keys.CONTROL,"a") + Keys.DELETE + text);
         }
     }
 
-    public void click(By locator){
+    public void click(By locator) {
         wd.findElement(locator).click();
     }
 
     public void pause() throws InterruptedException {
         Thread.sleep(2000);
     }
+
+    public String takeScreenshot() {
+        File tmp = ((TakesScreenshot) wd).getScreenshotAs(OutputType.FILE);
+        File screenshot = new File("screenshot" + System.currentTimeMillis() + "png");
+        try {
+            Files.copy(tmp, screenshot);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return screenshot.getAbsolutePath();
+
+    }
+
 
 
 

@@ -1,0 +1,16 @@
+21:07:18.207 [main] INFO  com.ilCarro.qa14.tests.TestBase - Start test signUpFromDataProviderFromCSVTestwith data:[com.ilCarro.qa14.models.User@1fc793c2]
+21:07:18.214 [main] INFO  com.ilCarro.qa14.tests.TestBase - ______________________________
+21:07:20.249 [main] INFO  com.ilCarro.qa14.tests.TestBase - Login form present. Actual result: true.Expected result: true.
+21:07:20.292 [main] INFO  com.ilCarro.qa14.tests.TestBase - Stop test signUpFromDataProviderFromCSVTest
+21:07:20.296 [main] INFO  com.ilCarro.qa14.tests.TestBase - Start test signUpFromDataProviderFromCSVTestwith data:[com.ilCarro.qa14.models.User@7daa61f3]
+21:07:20.297 [main] INFO  com.ilCarro.qa14.tests.TestBase - ______________________________
+21:07:21.689 [main] INFO  com.ilCarro.qa14.tests.TestBase - Login form present. Actual result: true.Expected result: true.
+21:07:21.715 [main] INFO  com.ilCarro.qa14.tests.TestBase - Stop test signUpFromDataProviderFromCSVTest
+21:07:21.716 [main] INFO  com.ilCarro.qa14.tests.TestBase - Start test signUpFromDataProviderFromCSVTestwith data:[com.ilCarro.qa14.models.User@6f099cef]
+21:07:21.717 [main] INFO  com.ilCarro.qa14.tests.TestBase - ______________________________
+21:07:23.054 [main] INFO  com.ilCarro.qa14.tests.TestBase - Login form present. Actual result: true.Expected result: true.
+21:07:23.080 [main] INFO  com.ilCarro.qa14.tests.TestBase - Stop test signUpFromDataProviderFromCSVTest
+21:07:23.081 [main] INFO  com.ilCarro.qa14.tests.TestBase - Start test signUpFromDataProviderFromCSVTestwith data:[com.ilCarro.qa14.models.User@2bac9ba]
+21:07:23.082 [main] INFO  com.ilCarro.qa14.tests.TestBase - ______________________________
+21:07:24.348 [main] INFO  com.ilCarro.qa14.tests.TestBase - Login form present. Actual result: true.Expected result: true.
+21:07:24.364 [main] INFO  com.ilCarro.qa14.tests.TestBase - Stop test signUpFromDataProviderFromCSVTest

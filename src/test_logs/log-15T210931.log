@@ -1,0 +1,16 @@
+21:09:37.560 [main] INFO  com.ilCarro.qa14.tests.TestBase - Start test signUpFromDataProviderFromCSVTestwith data:[User{firstName='Lolita', secondName='Lili', email='lola7@lola.com', password='123456789Rfnz'}]
+21:09:37.566 [main] INFO  com.ilCarro.qa14.tests.TestBase - ______________________________
+21:09:39.681 [main] INFO  com.ilCarro.qa14.tests.TestBase - Login form present. Actual result: true.Expected result: true.
+21:09:39.705 [main] INFO  com.ilCarro.qa14.tests.TestBase - Stop test signUpFromDataProviderFromCSVTest
+21:09:39.708 [main] INFO  com.ilCarro.qa14.tests.TestBase - Start test signUpFromDataProviderFromCSVTestwith data:[User{firstName='Lolita', secondName='Lili', email='lola8@lola.com', password='123456789Rfnz'}]
+21:09:39.708 [main] INFO  com.ilCarro.qa14.tests.TestBase - ______________________________
+21:09:41.115 [main] INFO  com.ilCarro.qa14.tests.TestBase - Login form present. Actual result: true.Expected result: true.
+21:09:41.131 [main] INFO  com.ilCarro.qa14.tests.TestBase - Stop test signUpFromDataProviderFromCSVTest
+21:09:41.132 [main] INFO  com.ilCarro.qa14.tests.TestBase - Start test signUpFromDataProviderFromCSVTestwith data:[User{firstName='Lolita', secondName='Lili', email='lola9@lola.com', password='123456789Rfnz'}]
+21:09:41.133 [main] INFO  com.ilCarro.qa14.tests.TestBase - ______________________________
+21:09:42.364 [main] INFO  com.ilCarro.qa14.tests.TestBase - Login form present. Actual result: true.Expected result: true.
+21:09:42.380 [main] INFO  com.ilCarro.qa14.tests.TestBase - Stop test signUpFromDataProviderFromCSVTest
+21:09:42.381 [main] INFO  com.ilCarro.qa14.tests.TestBase - Start test signUpFromDataProviderFromCSVTestwith data:[User{firstName='Lolita', secondName='Lili', email='lola10@lola.com', password='123456789Rfnz'}]
+21:09:42.382 [main] INFO  com.ilCarro.qa14.tests.TestBase - ______________________________
+21:09:43.596 [main] INFO  com.ilCarro.qa14.tests.TestBase - Login form present. Actual result: true.Expected result: true.
+21:09:43.608 [main] INFO  com.ilCarro.qa14.tests.TestBase - Stop test signUpFromDataProviderFromCSVTest

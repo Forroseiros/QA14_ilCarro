@@ -21,7 +21,7 @@ public class LoginTest extends TestBase {
         app.user().clickOnLoginTub();
 
         //fill login form in
-        app.user().fillLoginForm(new User().withEmail("Boberichka6@bober.com").withPassword("123456789Rfnz"));
+        app.user().fillLoginForm(new User().withEmail("Boberichka9@bober.com").withPassword("123456789Rfnz"));
         // press submit login
         app.user().submit();
         app.header().isLogoutTabPresent();
@@ -36,7 +36,7 @@ public class LoginTest extends TestBase {
         app.user().clickOnLoginTub();
 
         //fill login form in
-        app.user().fillLoginForm(new User().withEmail("Boberichka6@bober.com").withPassword("1234567779Rfnz"));
+        app.user().fillLoginForm(new User().withEmail("Boberichka@bober.com").withPassword("1234567779Rfnz"));
         // press submit login
         app.user().submit();
 

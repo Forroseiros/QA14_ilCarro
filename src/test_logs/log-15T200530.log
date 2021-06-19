@@ -1,0 +1,12 @@
+20:05:36.536 [main] INFO  com.ilCarro.qa14.tests.TestBase - Start test signUpFromDataProviderTestwith data:[fName, sName, fBoberkov@gmail.com, 123456789Rfnz]
+20:05:36.544 [main] INFO  com.ilCarro.qa14.tests.TestBase - ______________________________
+20:05:39.204 [main] INFO  com.ilCarro.qa14.tests.TestBase - Login form present. Actual result: true.Expected result: true.
+20:05:39.240 [main] INFO  com.ilCarro.qa14.tests.TestBase - Stop test signUpFromDataProviderTest
+20:05:39.244 [main] INFO  com.ilCarro.qa14.tests.TestBase - Start test signUpFromDataProviderTestwith data:[fName, sName, fBoberkovna@gmail.com, 123456789Rfnz]
+20:05:39.244 [main] INFO  com.ilCarro.qa14.tests.TestBase - ______________________________
+20:05:40.955 [main] INFO  com.ilCarro.qa14.tests.TestBase - Login form present. Actual result: true.Expected result: true.
+20:05:40.984 [main] INFO  com.ilCarro.qa14.tests.TestBase - Stop test signUpFromDataProviderTest
+20:05:40.987 [main] INFO  com.ilCarro.qa14.tests.TestBase - Start test signUpFromDataProviderTestwith data:[fName, sName, fBoberkichi@gmail.com, 123456789Rfnz]
+20:05:40.987 [main] INFO  com.ilCarro.qa14.tests.TestBase - ______________________________
+20:05:42.442 [main] INFO  com.ilCarro.qa14.tests.TestBase - Login form present. Actual result: true.Expected result: true.
+20:05:42.460 [main] INFO  com.ilCarro.qa14.tests.TestBase - Stop test signUpFromDataProviderTest
